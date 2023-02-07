@@ -83,7 +83,7 @@ int GetSingleValue(CellInfo* cellData, const int value)
 }
 
 
-void CandidateChecking(int grid[N][N], CellInfo gridData[N][N])  //make it more dynamic
+void CandidateChecking(int grid[N][N], CellInfo gridData[N][N])
 {
     for (int row = 0; row < N; row++) {
         for (int col = 0; col < N; col++) {
