@@ -1,6 +1,6 @@
 # Sudoku-Solver
 
-This is a simple reposatory of a *Sudoku Grid Solver*. The program given a start sudoku grid and by using a method based on ... algorithm, solve the sudoku grid. Some sudoku ... configuration ... as more than one solution, in that case the program will output one of the solution. In case of no solution available for the sudoku ... configuration ..., the program will output ```
+This is a simple reposatory of a *Sudoku Grid Solver*. The program given a start sudoku grid and by using a method based on ... algorithm, solve the sudoku grid. Some sudoku ... configuration ... as more than one solution, in that case the program will output one of the solution. In case of no solution available for the sudoku ... configuration ..., the program will output `This Grid Has No Solution!`.
 
 
 
