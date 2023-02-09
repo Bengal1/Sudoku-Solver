@@ -26,7 +26,7 @@ SudokuBacktrackingAlgorithm(SudokuGrid[N][N])
         if (AssignValidCandidate(SudokuGrid, currentCell) == true) {
               GoToNextVacantCell();
               if (currentCell == (9,*)
-                  return 'Grid Is Solved';
+                  return SudokuGrid[N][N];  /* Grid is Solved */
         }
         else {
             GoToPreviousChangedCell()
