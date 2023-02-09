@@ -14,7 +14,7 @@ The *Sudoku Backtracking Algorithm* goes through the sudoku grid in a type-write
 The algorithm point to the first empty cell and assign a candidate, number btween 1 and 9, when it finds a candidate that doesn't violate the sudoku rules it skips to the next vacant cell and does the same, until the algorithm reaches a cell where all the candidates violate the rules of sudoku. In this case the algorithm go back (Backtrack) to the 'previous changed cell' and inceament the value until a valid candidate is found, then the algorithm goes to the next vacant cell and assign candidates. If a valid candidate wasn't found, the algorithm skip to the 'previous changed cell' and so on.
 
 ### Sudoku Backtracking Pseudo-code:
-```
+```ruby
 SudokuBacktrackingAlgorithm(SudokuGrid[N][N])
 {
    currentCell = (0,0);
@@ -38,7 +38,7 @@ SudokuBacktrackingAlgorithm(SudokuGrid[N][N])
 
 ```
 ### Candidate-Checking Method
-In addition to all above I executed a *candidate-checking method*. In this method we go through every cell and check for valid candidates on the start sudoku grid, the candidates that violates the rules of sudoku are removed from the candidates list. When the algorithm will perform on a given cell it will assign from the list of valid candidates ( $\leq$  *N*)
+In addition to all above I executed a *candidate-checking method*. In this method we go through every cell and check for valid candidates on the start sudoku grid, the candidates that violates the rules of sudoku are removed from the candidates list. When the algorithm will perform on a given cell it will assign from the list of valid candidates ( $\leq$  *N*). 
 
 ### Complexity
 Let as note the size of the sudoku grid as *N* such that the number of cells in a grid is *N x N*.
