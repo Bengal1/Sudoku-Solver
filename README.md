@@ -50,6 +50,6 @@ The complexity of the simple *Sudoku Backtracking Algorithm* is O(N^2). Because 
 
 ## Reference
 
-[Mathematics and Sudokus - Cornell](http://pi.math.cornell.edu/~mec/Summer2009/meerkamp/Site/Introduction.html)
+[Mathematics and Sudokus - Cornell University](http://pi.math.cornell.edu/~mec/Summer2009/meerkamp/Site/Introduction.html)
 
 [Sudoku solving algorithms - Wikipedia](https://en.wikipedia.org/wiki/Sudoku_solving_algorithms)
