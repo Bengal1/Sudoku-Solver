@@ -3,6 +3,6 @@
 
 #include "common.h"
 
-bool SimpleSolving(int grid[N][N], CellInfo gridData[N][N]);
+bool SimpleSolving(int grid[N][N], CellInformation gridData[N][N]);
 
-#endif //SIMPLE_SOLVING
+#endif //SIMPLE_SOLVING_H

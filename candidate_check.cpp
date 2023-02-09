@@ -29,7 +29,7 @@ bool CheckViolation(int grid[N][N], const int currentRow, const int currentCol, 
 }
 
 
-void UpdateMarkUps(CellInfo* cellData, const int number, const int action)
+void UpdateMarkUps(CellInformation* cellData, const int number, const int action)
 {
     switch (action) {
     case ADD: {
@@ -59,7 +59,7 @@ void UpdateMarkUps(CellInfo* cellData, const int number, const int action)
     }
 }
 
-int GetSingleValue(CellInfo* cellData, const int value)
+int GetSingleValue(CellInformation* cellData, const int value)
 {
     int returnValue = 0;
 
@@ -83,7 +83,7 @@ int GetSingleValue(CellInfo* cellData, const int value)
 }
 
 
-void CandidateChecking(int grid[N][N], CellInfo gridData[N][N])
+void CandidateChecking(int grid[N][N], CellInformation gridData[N][N])  //make it more dynamic
 {
     for (int row = 0; row < N; row++) {
         for (int col = 0; col < N; col++) {

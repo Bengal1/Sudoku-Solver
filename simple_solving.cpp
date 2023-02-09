@@ -15,13 +15,13 @@ bool GetNextCell(int grid[N][N], int* row, int* col)
                 return false;
             }
         }
-        if (grid[(*row)][(*col)] == EMPTY) {
+        if (grid[*row][*col] == EMPTY) {
             return true;
         }
     }
 }
 
-bool GetLastChangedCell(CellInfo gridData[N][N], int* row, int* col)
+bool GetLastChangedCell(CellInformation gridData[N][N], int* row, int* col)
 {
     while (true)
     {
@@ -34,13 +34,13 @@ bool GetLastChangedCell(CellInfo gridData[N][N], int* row, int* col)
                 return false;
             }
         }
-        if (gridData[(*row)][(*col)].numOfMarkUps != EMPTY) {
+        if (gridData[*row][*col].numOfMarkUps != EMPTY) {
             return true;
         }
     }
 }
 
-bool AssignSimpleSolve(int grid[N][N], CellInfo* gridData, int row, int col, bool* direction)
+bool AssignSimpleSolve(int grid[N][N], CellInformation* gridData, int row, int col, bool* direction)
 {
     if (gridData->numOfMarkUps == EMPTY) {
         return *direction;
@@ -59,7 +59,7 @@ bool AssignSimpleSolve(int grid[N][N], CellInfo* gridData, int row, int col, boo
     }
 }
 
-bool SimpleSolving(int grid[N][N], CellInfo gridData[N][N])
+bool SimpleSolving(int grid[N][N], CellInformation gridData[N][N])
 {
     int row = 0, col = 0;
     int* pRow = &row, * pCol = &col;

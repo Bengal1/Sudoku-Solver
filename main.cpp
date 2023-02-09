@@ -25,7 +25,7 @@ void PrintSudokuGrid(int ar[N][N])
 
 int main()
 {
-    CellInfo gridInfo[N][N] = { 0 };
+    CellInformation gridInfo[N][N];
     int sudokuGrid[N][N] = {    {1, 0, 3,  0, 0, 4,  0, 8, 7},
                                 {0, 0, 0,  9, 0, 0,  0, 6, 0},
                                 {0, 8, 0,  0, 0, 0,  0, 0, 0},

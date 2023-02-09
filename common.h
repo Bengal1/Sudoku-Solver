@@ -2,7 +2,6 @@
 #define COMMON_H
 
 #include <iostream>
-#include <list>
 using namespace std;
 
 
@@ -10,10 +9,16 @@ using namespace std;
 #define N 9
 
 
-typedef struct cellInfo {
+struct CellInformation {
 	int markUps[N];
 	int numOfMarkUps;
-} CellInfo;
+	
+	CellInformation() {
+		numOfMarkUps = 0;
+		for (int i = 0; i < N; i++)
+			markUps[i] = 0;
+	}
+};
 
 
-#endif //COMMON
+#endif //COMMON_H

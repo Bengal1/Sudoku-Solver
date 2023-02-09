@@ -5,6 +5,6 @@
 
 bool CheckViolation(int grid[N][N], const int currentRow, const int currentCol, const int number);
 
-void CandidateChecking(int grid[N][N], CellInfo gridData[N][N]);
+void CandidateChecking(int grid[N][N], CellInformation gridData[N][N]);
 
-#endif //CANDIDATE_CHECK
+#endif //CANDIDATE_CHECK_H
