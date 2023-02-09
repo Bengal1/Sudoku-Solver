@@ -39,7 +39,9 @@ SudokuBacktrackingAlgorithm(SudokuGrid[N][N])
 ### Complexity
 Let as note the size of the sudoku grid as *N* such that the number of cells in a grid is *NxN*.
 And Let as note the number of the vacant cells in a given sudoku grid to be *m*.
-The complexity of the simple *Sudoku Backtracking Algorithm* is *O(n^m)* 
+
+The complexity of the simple *Sudoku Backtracking Algorithm* is *O(n<sup>m</sup>)*. Because in the worst possible the algorithm go through *m* cells and in each cell assign *N* candidates.
+
 ## Reference
 
 http://pi.math.cornell.edu/~mec/Summer2009/meerkamp/Site/Introduction.html
