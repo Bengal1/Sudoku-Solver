@@ -7,8 +7,8 @@
 
 
 void PrintSudokuGrid(int ar[N][N])
-{   
-	for (int i = 0; i < N; i++) {
+{
+    for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             cout << "  " << ar[i][j];
             if ((j < N - 1) && (j % (N / 3) == 2))
@@ -17,10 +17,10 @@ void PrintSudokuGrid(int ar[N][N])
         cout << endl;
         if ((i < N - 1) && (i % (N / 3) == 2))
             cout << H_LINE << endl;
-	}
-	cout << endl;
+    }
+    cout << endl;
 
-	return;
+    return;
 }
 
 int main()
