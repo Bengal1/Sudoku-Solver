@@ -14,7 +14,7 @@ The *Sudoku Backtracking Algorithm* goes through the sudoku grid in a type-write
 The algorithm point to the first empty cell and assign a candidate, number btween 1 and 9, when it finds a candidate that doesn't violate the sudoku rules it skips to the next vacant cell and does the same, until the algorithm reaches a cell where all the candidates violate the rules of sudoku. In this case the algorithm go back (Backtrack) to the 'previous changed cell' and inceament the value until a valid candidate is found, then the algorithm goes to the next vacant cell and assign candidates. If a valid candidate wasn't found, the algorithm skip to the 'previous changed cell' and so on.
 ### Pseudo-code
 ```
-SudokuBacktrackingAlgorithm(grid[N][N])
+SudokuBacktrackingAlgorithm(SudokuGrid[N][N])
 {
    currentCell = (0,0);
    
@@ -22,7 +22,7 @@ SudokuBacktrackingAlgorithm(grid[N][N])
    
    while (grid is not solved)
     {
-        if (AssignValidCandidate(currentCell) == true) {
+        if (AssignValidCandidate(SudokuGrid, currentCell) == true) {
               GoToNextVacantCell();
               if (currentCell == (9,*)
                   return 'Grid Is Solved';
@@ -37,7 +37,7 @@ SudokuBacktrackingAlgorithm(grid[N][N])
 
 ```
 ### Complexity
-
+The complexity of the simple *Sudoku Backtracking Algorithm* is *O(n^m)* 
 ## Reference
 
 http://pi.math.cornell.edu/~mec/Summer2009/meerkamp/Site/Introduction.html
