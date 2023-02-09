@@ -37,8 +37,8 @@ SudokuBacktrackingAlgorithm(SudokuGrid[N][N])
 }
 
 ```
-
-In addition to all above I executed a *candidate-checking method*.
+### Candidate-Checking Method
+In addition to all above I executed a *candidate-checking method*. In this method we go through every cell and check for valid candidates on the start sudoku grid, the candidates that violates the rules of sudoku are removed from the candidates list. When the algorithm will perform on a given cell it will assign from the list of valid candidates (*$$\leq$$N*)
 
 ### Complexity
 Let as note the size of the sudoku grid as *N* such that the number of cells in a grid is *N x N*.
@@ -46,6 +46,7 @@ And Let as note the number of the vacant cells in a given sudoku grid to be *m*.
 #### Time (Logic)
 The complexity of the simple *Sudoku Backtracking Algorithm* is *O(N<sup>m</sup>)*. Because in the worst possible the algorithm go through *m* cells and in each cell assign *N* candidates.
 
+*Candidate-Checking Method* - the complexity of this method is *O(N<sup>3</sup>)*
 #### Space (Memory)
 We asume the complexity of the simple *Sudoku Backtracking Algorithm*  and the improved algorithm are the same.
 
