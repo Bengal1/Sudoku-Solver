@@ -13,8 +13,6 @@ Backtracking is a class of problem-solving algorithms. An algorithm of that kind
 The *Sudoku Backtracking Algorithm* goes through the sudoku grid in a type-writer manner (left-to-right and downward) and methodically assign every cell a candidate in a way that doesn't violates the sudoku rules.
 The algorithm point to the first empty cell and assign a candidate, number btween 1 and 9, when it finds a candidate that doesn't violate the sudoku rules it skips to the next vacant cell and does the same, until the algorithm reaches a cell where all the candidates violate the rules of sudoku. In this case the algorithm go back (Backtrack) to the 'previous changed cell' and inceament the value until a valid candidate is found, then the algorithm goes to the next vacant cell and assign candidates. If a valid candidate wasn't found, the algorithm skip to the 'previous changed cell' and so on.
 
-In addition to all above I executed a *candidate-checking method*.
-
 ### Sudoku Backtracking Pseudo-code:
 ```
 SudokuBacktrackingAlgorithm(SudokuGrid[N][N])
@@ -39,6 +37,9 @@ SudokuBacktrackingAlgorithm(SudokuGrid[N][N])
 }
 
 ```
+
+In addition to all above I executed a *candidate-checking method*.
+
 ### Complexity
 Let as note the size of the sudoku grid as *N* such that the number of cells in a grid is *N x N*.
 And Let as note the number of the vacant cells in a given sudoku grid to be *m*.
