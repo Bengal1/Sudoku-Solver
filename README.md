@@ -59,3 +59,4 @@ There is an option for the simple algorithm to keep only the Sudoku grid Data, a
 [Mathematics and Sudokus - Cornell University](http://pi.math.cornell.edu/~mec/Summer2009/meerkamp/Site/Introduction.html)
 
 [Sudoku solving algorithms - Wikipedia](https://en.wikipedia.org/wiki/Sudoku_solving_algorithms)
+[A Pencil-and-Paper Algorithm for Solving Sudoku Puzzles - J.F. Crook](https://www.ams.org/journals/notices/200904/rtx090400460p.pdf?adat=April%202009&trk=0&cat=feature&galt=feature)
