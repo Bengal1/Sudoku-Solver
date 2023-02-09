@@ -4,8 +4,14 @@ This is a simple implenemtation of *Sudoku Solving Algorithm*. The program is gi
 
 ## Sudoku Solving Algorithm
 
+### Sudoku
+hakdama
+#### Sudoku Rules
+
 ### Backtracing Algorithm
 Backtracking is a class of problem-solving algorithms. An algorithm of that kind finds solution to computational problems that satisfies the problem's constraints. The algorithm uses the brute force approach, incrementally builds candidates to the solutions, and abandons a candidate as soon as it determines that the candidate is not a part of a valid solution (backtracks).
+
+The *Sudoku Backtracking Algorithm* goes through the sudoku grid in a type-writer manner (left-to-right and downward) and methodically assign every cell a candidate in a way that doesn't violates the sudoku rules.
 ### Complexity
 
 ## Reference
