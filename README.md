@@ -4,7 +4,7 @@ This is a simple implenemtation of *Sudoku Solving Algorithm*. The program is gi
 
 ## Sudoku Solving Algorithm
 
-### Backtracing
+### Backtracing Algorithm
 
 ### Complexity
 
