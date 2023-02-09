@@ -12,7 +12,10 @@ Backtracking is a class of problem-solving algorithms. An algorithm of that kind
 
 The *Sudoku Backtracking Algorithm* goes through the sudoku grid in a type-writer manner (left-to-right and downward) and methodically assign every cell a candidate in a way that doesn't violates the sudoku rules.
 The algorithm point to the first empty cell and assign a candidate, number btween 1 and 9, when it finds a candidate that doesn't violate the sudoku rules it skips to the next vacant cell and does the same, until the algorithm reaches a cell where all the candidates violate the rules of sudoku. In this case the algorithm go back (Backtrack) to the 'previous changed cell' and inceament the value until a valid candidate is found, then the algorithm goes to the next vacant cell and assign candidates. If a valid candidate wasn't found, the algorithm skip to the 'previous changed cell' and so on.
-### Pseudo-code
+
+In addition to all above I executed a *candidate-checking method*.
+
+### Sudoku Backtracking Pseudo-code
 ```
 SudokuBacktrackingAlgorithm(SudokuGrid[N][N])
 {
@@ -42,8 +45,11 @@ And Let as note the number of the vacant cells in a given sudoku grid to be *m*.
 
 The complexity of the simple *Sudoku Backtracking Algorithm* is *O(N<sup>m</sup>)*. Because in the worst possible the algorithm go through *m* cells and in each cell assign *N* candidates.
 
+####Space
+The complexity of the simple *Sudoku Backtracking Algorithm* is O(N^2). Because we need to keep only the Sudoku grid Data, and in every iteration we check the value of a cell, increament and check for violation of the sudoku rules.
+
 ## Reference
 
-http://pi.math.cornell.edu/~mec/Summer2009/meerkamp/Site/Introduction.html
+[Mathematics and Sudokus - Cornell](http://pi.math.cornell.edu/~mec/Summer2009/meerkamp/Site/Introduction.html)
 
-https://en.wikipedia.org/wiki/Sudoku_solving_algorithms
+[Sudoku solving algorithms - Wikipedia](https://en.wikipedia.org/wiki/Sudoku_solving_algorithms)
