@@ -17,7 +17,7 @@ The algorithm point to the first empty cell and assign a candidate, number btwee
 ```ruby
 SudokuBacktrackingAlgorithm(SudokuGrid[N][N])
 {
-   currentCell = (0,0);  // Cells go from 0 to 8
+   currentCell = (0,0);  /* Cells go from 0 to 8 */
    
    GoToNextVacantCell();
    
@@ -26,7 +26,7 @@ SudokuBacktrackingAlgorithm(SudokuGrid[N][N])
         if (AssignValidCandidate(SudokuGrid, currentCell) == true) {
               GoToNextVacantCell();
               if (currentCell == (9,*)
-                  return SudokuGrid[N][N];  // Grid is Solved
+                  return SudokuGrid[N][N];  /* Grid is Solved */
         }
         else {
             GoToPreviousChangedCell()
