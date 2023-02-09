@@ -5,7 +5,7 @@ This is a simple implenemtation of *Sudoku Solving Algorithm*. The program is gi
 ## Sudoku Solving Algorithm
 
 ### Backtracing Algorithm
-Backtracking is a class of problem-solving algorithms. An algorithm of that kind finds solution to computational problems that satisfies the problem's constraints. The algorithm uses the brute force approach, incrementally builds candidates to the solutions, and abandons a candidate ("backtracks") as soon as it determines that the candidate is not a part of a valid solution.
+Backtracking is a class of problem-solving algorithms. An algorithm of that kind finds solution to computational problems that satisfies the problem's constraints. The algorithm uses the brute force approach, incrementally builds candidates to the solutions, and abandons a candidate as soon as it determines that the candidate is not a part of a valid solution (backtracks).
 ### Complexity
 
 ## Reference
