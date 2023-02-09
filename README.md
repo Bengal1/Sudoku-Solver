@@ -28,7 +28,7 @@ SudokuBacktrackingAlgorithm(grid[N][N])
                   return 'Grid Is Solved';
         }
         else {
-            GoToLastChangedCell()
+            GoToPreviousChangedCell()
             if (currentCell == (-1, *))
                   return 'Grid Has No Solution';
         }
