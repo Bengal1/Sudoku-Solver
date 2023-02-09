@@ -21,7 +21,7 @@ SudokuBacktrackingAlgorithm(SudokuGrid[N][N])
    
    GoToNextVacantCell();
    
-   while (grid is not solved)
+   while (currentCell in SudokuGrid)
     {
         if (AssignValidCandidate(SudokuGrid, currentCell) == true) {
               GoToNextVacantCell();
