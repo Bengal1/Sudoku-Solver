@@ -48,7 +48,7 @@ The complexity of the simple *Sudoku Backtracking Algorithm* is *O(N<sup>m</sup>
 #### Space
 We asume the complexity of the simple *Sudoku Backtracking Algorithm*  and the improved algorithm are the same.
 
-There is an option for the simple algorithm to keep only the Sudoku grid Data, and in every iteration we check the value of a cell, increament and check for violation of the sudoku rules. In this case the space complexity will be *O(N^<sup>2</sup>)*, we don't know how it will affect the time-logic complecity duo to additional needed actions.
+There is an option for the simple algorithm to keep only the Sudoku grid Data, and in every iteration we check the value of a cell, increament and check for violation of the sudoku rules. In this case the space complexity will be *O(N<sup>2</sup>)*, we don't know how it will affect the time-logic complecity duo to additional needed actions.
 
 ## Reference
 
