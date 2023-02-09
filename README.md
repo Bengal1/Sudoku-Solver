@@ -39,7 +39,8 @@ SudokuBacktrackingAlgorithm(SudokuGrid[N][N])
 ```
 ### Candidate-Checking Method
 In addition to all above, I executed a *candidate-checking method*. In this method we go through every cell and check for valid candidates on the start sudoku grid, the candidates that violates the rules of sudoku are removed from the candidates list. When the algorithm will perform on a given cell it will assign from the list of valid candidates ( $\leq$  *N*). We will note the algorithm included the candidate-check method as the 'Improved Sudoku Backtracking Algorithm'.
-![candidate_check](https://user-images.githubusercontent.com/34989887/217918673-c37752af-adb0-4e34-8d62-f85fbd0f42dc.png)
+
+<img src="https://user-images.githubusercontent.com/34989887/217918673-c37752af-adb0-4e34-8d62-f85fbd0f42dc.png" width="350" height="350"/>
 
  - There is a special case where the improved algorithm & the simple algorithm are the same, it happens when the start sudoku grid is empty.
  - This method is used in crook's sudoku solving algorithm (see References). we choose not to implement the *place-finding method* which is not so effective for the hard-level sudoku.
