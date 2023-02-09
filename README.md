@@ -15,7 +15,7 @@ The algorithm point to the first empty cell and assign a candidate, number btwee
 
 In addition to all above I executed a *candidate-checking method*.
 
-### Sudoku Backtracking Pseudo-code
+### Sudoku Backtracking Pseudo-code:
 ```
 SudokuBacktrackingAlgorithm(SudokuGrid[N][N])
 {
