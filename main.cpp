@@ -12,11 +12,11 @@ void PrintSudokuGrid(int ar[N][N])
         for (int j = 0; j < N; j++) {
             cout << "  " << ar[i][j];
             if ((j < N - 1) && (j % (N / 3) == 2))
-                cout << V_LINE;
+                std::cout << V_LINE;
         }
-        cout << endl;
+        std::cout << std::endl;
         if ((i < N - 1) && (i % (N / 3) == 2))
-            cout << H_LINE << endl;
+            std::cout << H_LINE << std::endl;
     }
     cout << endl;
 
@@ -39,7 +39,7 @@ int main()
                                 {0, 2, 0,  0, 0, 5,  0, 0, 0} };
 
 
-    cout << " Start Sudoku Grid:" << endl;
+    std::cout << " Start Sudoku Grid:" << std::endl;
     PrintSudokuGrid(sudokuGrid);
 
     CandidateChecking(sudokuGrid, gridInfo);
