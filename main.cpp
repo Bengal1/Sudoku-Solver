@@ -10,7 +10,7 @@ void PrintSudokuGrid(int ar[N][N])
 {
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
-            cout << "  " << ar[i][j];
+            std::cout << "  " << ar[i][j];
             if ((j < N - 1) && (j % (N / 3) == 2))
                 std::cout << V_LINE;
         }
@@ -18,7 +18,7 @@ void PrintSudokuGrid(int ar[N][N])
         if ((i < N - 1) && (i % (N / 3) == 2))
             std::cout << H_LINE << std::endl;
     }
-    cout << endl;
+    std::cout << std::endl;
 
     return;
 }
@@ -45,11 +45,11 @@ int main()
     CandidateChecking(sudokuGrid, gridInfo);
 
     if (!SimpleSolving(sudokuGrid, gridInfo)) {
-        cout << "This Grid Has No Solution!" << endl;
+        std::cout << "This Grid Has No Solution!" << std::endl;
         return 0;
     }
 
-    cout << " Solution:" << endl;
+    std::cout << " Solution:" << std::endl;
     PrintSudokuGrid(sudokuGrid);
 
     return 0;
